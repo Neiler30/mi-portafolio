@@ -1,0 +1,165 @@
+/* Badge de presentación más grande */
+.badge.bg-gradient-primary-to-secondary {
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  letter-spacing: 1px;
+}
+
+/* 🎨 Paleta personalizada para Neyller Castro (Dark Mode Pro) */
+:root {
+  --main-blue-dark: #0A84FF;       /* Azul oscuro: hover o fondo botón */
+  --main-blue: #58A6FF;            /* Azul claro: links, íconos, texto */
+  --main-blue-light: #C9D1D9;      /* Gris claro: texto secundario */
+  --main-gray-bg: #161B22;         /* Fondo navbar, secciones, tarjetas */
+  --main-text-dark: #C9D1D9;       /* Texto base */
+}
+
+/* Fondo principal y texto global */
+body {
+  background: var(--main-gray-bg) !important;
+  color: var(--main-text-dark) !important;
+}
+
+/* Navbar, footer y fondos base */
+.navbar, .footer, .bg-white, .bg-light {
+  background: var(--main-gray-bg) !important;
+  color: var(--main-text-dark) !important;
+}
+
+/* Navbar texto y enlaces */
+.navbar-brand,
+.nav-link,
+.navbar-nav .nav-link.active {
+  color: var(--main-blue-light) !important;
+}
+
+.nav-link:hover {
+  color: var(--main-blue) !important;
+}
+
+/* Botón principal */
+.btn-primary {
+  background-color: var(--main-blue) !important;
+  border-color: var(--main-blue) !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--main-blue-dark) !important;
+  border-color: var(--main-blue-dark) !important;
+  color: white !important;
+}
+
+/* Botón con borde primario */
+.btn-outline-primary {
+  color: var(--main-blue) !important;
+  border-color: var(--main-blue) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--main-blue) !important;
+  color: #fff !important;
+  border-color: var(--main-blue) !important;
+}
+
+/* Ajuste de colores para textos primarios y secundarios en modo dark */
+.text-primary {
+  color: var(--main-blue) !important;
+}
+.text-secondary {
+  color: var(--main-blue-dark) !important;
+}
+.text-muted {
+  color: var(--main-blue-light) !important;
+  opacity: 0.8 !important;
+}
+
+/* Texto con degradado */
+.text-gradient {
+  background: linear-gradient(45deg, var(--main-blue), var(--main-blue-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: var(--main-blue) !important;
+}
+
+/* Fondo degradado del perfil y badges */
+.profile,
+.badge.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, var(--main-blue), var(--main-blue-dark)) !important;
+}
+
+/* Tarjetas de proyectos */
+.project-card {
+  background: var(--main-gray-bg);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  border: none;
+  transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+}
+
+/* Íconos de contacto */
+.contact-icon {
+  color: var(--main-blue) !important;
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+.contact-icon:hover {
+  color: var(--main-blue-dark) !important;
+}
+
+/* Forzar color azul en los íconos de las secciones (feature icons) */
+.feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3 i,
+.feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3 {
+  background: none !important;
+  color: var(--main-blue) !important;
+}
+
+/* Cards resume y proyectos fondo dark */
+.card.shadow {
+  background: var(--main-gray-bg) !important;
+  color: var(--main-text-dark) !important;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  border: none;
+  transition: box-shadow 0.2s;
+}
+.card.shadow:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+}
+
+/* Fondo de los badges y elementos internos claros en cards */
+.card .bg-light {
+  background: #222b36 !important;
+  color: var(--main-blue-light) !important;
+}
+
+img {
+    width: 50%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.2s
+}
+
+/* Aplicar fondo degradado azul solo a la sección #sobremi */
+#sobremi {
+  background: linear-gradient(135deg, #061171 0%, #2890ff 100%) !important;
+}
+
+#sobremi,
+#sobremi h2,
+#sobremi p,
+#sobremi .lead,
+#sobremi .text-white-50 {
+  color: #fff !important;
+}
